@@ -4,7 +4,7 @@ let postLng;
 let pastCities = [];
 function getLat() {
     let cityName = document.querySelector("#latCity").value;
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=26f0afb86e9cf6226ab49ee5e767a358`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=26f0afb86e9cf6226ab49ee5e767a358`)
     .then(function(response){
         return response.json();
     }).then(function(data){
